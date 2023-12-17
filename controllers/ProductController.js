@@ -8,7 +8,8 @@ export const getAll = async (req, res) => {
 	} catch (e){
 		console.log(e)
 		res.status(500).json({
-			message: 'Не удалось получить товары'
+			message: 'Не удалось получить товары',
+			errorMsg: e
 		})
 	}
 }
